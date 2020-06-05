@@ -1,0 +1,100 @@
+.mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /*background-image: url("src/assets/vynil.jpg");*/
+  /*background-color: beige;*/
+  width: 100%;
+  text-align: center;
+}
+
+/*Image libre de droits*/
+
+.header {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 10px;
+  background-image: url("src/assets/vynil.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: beige;
+  font-size: 70px;
+  font-family: "Geneva", serif;
+  align-self: center;
+  padding-left: 10px;
+}
+
+.Discs {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.titleAndBtn {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.titleAndBtn h1 {
+padding-right: 10px;
+}
+
+app-button {
+  align-self: center;
+}
+
+.total {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.Random {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+app-disc {
+  border: black;
+}
+
+button {
+  height: 50px;
+  width: 250px;
+  font-family: Arial, serif;
+  color: black;
+  border-radius: 10px;
+  background-color: turquoise;
+  align-self: center;
+  margin: 0 0 10px 0;
+}
+
+button:hover {
+  opacity: 50%;
+}
+
+
+
+

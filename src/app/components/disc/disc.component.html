@@ -1,0 +1,27 @@
+<div class="infos">
+  <div class="title">
+    <p class="discTitle">Title :</p>
+    <p> {{disc?.basic_information.title}}</p>
+  </div>
+  <div class="year">
+    <p class="discYear">Year :</p>
+    <p> {{disc?.basic_information.year}}</p>
+  </div>
+  <div class="allArtists">
+    <p class="disc_artists">Artists(s) :</p>
+    <p class="artists">
+      <span *ngFor="let artist of disc?.basic_information.artists"> {{artist.name}}
+        <span *ngIf="artist !== disc?.basic_information.artists.slice(-1).pop()">, </span>
+      </span>
+    </p>
+  </div>
+  <div class="allGenres">
+    <p class="genreTitle">Genre(s) :</p>
+    <p class="genres"><span *ngFor="let g of disc?.basic_information.genres"> {{g}}<span *ngIf="g !== disc.basic_information.genres.slice(-1).pop()"> & </span></span></p>
+  </div>
+  <div class="line">
+    <hr>
+  </div>
+</div>
+
+

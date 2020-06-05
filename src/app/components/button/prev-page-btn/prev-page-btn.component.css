@@ -1,0 +1,14 @@
+button {
+  height: 50px;
+  width: 100px;
+  font-family: Arial, serif;
+  color: black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  align-items: center;
+  border: none;
+}
+
+button:hover {
+  opacity: 50%;
+}

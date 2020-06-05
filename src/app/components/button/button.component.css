@@ -1,0 +1,13 @@
+button {
+  height: 50px;
+  width: 150px;
+  font-family: Arial, serif;
+  color: black;
+  border-radius: 10px;
+  background-color: turquoise;
+  align-items: center;
+}
+
+button:hover {
+  opacity: 50%;
+}

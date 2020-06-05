@@ -1,0 +1,50 @@
+.infos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  display:flex;
+  flex-direction: row;
+}
+
+.discTitle {
+  font-weight: bold;
+  padding-right: 10px;
+  color: orangered;
+}
+
+.year {
+  display: flex;
+  flex-direction: row;
+}
+
+.discYear {
+  font-weight: bold;
+  padding-right: 10px;
+  color: orangered;
+}
+
+
+.allArtists {
+  display: flex;
+  flex-direction: row;
+}
+
+.disc_artists {
+  padding-right: 10px;
+  color: orangered;
+}
+
+.allGenres {
+  display: flex;
+  flex-direction: row;
+}
+
+.genreTitle {
+  padding-right: 10px;
+  color: orangered;
+}
+

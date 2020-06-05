@@ -1,0 +1,24 @@
+<div class="mainPage">
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Discogs</h1>
+    </div>
+    <div class="Discs" *ngIf="clicked == false">
+      <div class="titleAndBtn">
+        <h1>Vinyl collection</h1>
+        <app-button (click)="OnClick()"></app-button>
+      </div>
+      <app-disc *ngFor="let d of discs" [disc]="d"></app-disc>
+      <p class="total" *ngIf="clicked==false">Total of vinyls : {{pages?.items}}</p>
+      <div class="footer">
+        <app-prev-page-btn (click)="getPrevPage()"></app-prev-page-btn>
+        <app-next-page-btn (click)="getNextPage()"></app-next-page-btn>
+      </div>
+    </div>
+    <div class="Random" *ngIf="clicked == true">
+      <h1 class="RandomDisc" >Random vinyl</h1>
+      <app-disc class="randomVinyl" [disc]="this.getRandom(discs)"></app-disc>
+      <button (click)="OnClickList()">Return to collection</button>
+    </div>
+  </div>
+</div>
